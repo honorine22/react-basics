@@ -19,3 +19,9 @@ background-color: green;
   background-color: lightgreen;
   color: black;
 }
+.button .red {
+  background-color: red;
+}
+.button.red:hover {
+  background-color: salmon;
+}

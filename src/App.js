@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Person from './Person/Person';
 import Validation from './Validation/Validation';
 import Char from './Char/Char';
 import "./App.css";
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 
+const StyledButton = styled.button`
+        background-color: ${props => props.alt ? 'red': 'green'};;
+        color: white;
+        font: inherit;
+        border: 1px solid blue;
+        padding: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: ${props => props.alt ? 'salmon': 'lightgreen'};;
+          color: black;
+        }
+    `; 
 class App extends Component {
 
   state = {
@@ -84,12 +98,16 @@ deleteCharHandler = ( index ) => {
       persons = (
         <div>
           {this.state.persons.map((person, index) => {
-            return <Person
+            return <ErrorBoundary
+            key={person.id}
+            > 
+              <Person
               click={() => this.deletePersonHandler(index)}
               name={person.name} 
               age={person.age}
               key={person.id}
               changed={(event) => this.nameChangedHandler(event, person.id)} />
+              </ErrorBoundary>
           })}
         </div>
       );
@@ -107,11 +125,10 @@ deleteCharHandler = ( index ) => {
       <div className="App">
         <h1>Hi, I'm a React App</h1>
         <p className={classes.join(' ')}>This is really working!</p>
-        <button
-        className="button" 
+        <StyledButton 
           onClick={this.togglePersonsHandler}
           >Toggle Persons
-        </button>
+        </StyledButton>
 
         {persons}
         <hr />

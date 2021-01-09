@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import './Person.css';
+import './Person.module.css';
 const StyledDiv = styled.div`
     width: 50%;
     margin: 20px auto;
