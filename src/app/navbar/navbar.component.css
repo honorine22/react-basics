@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@700&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+#mainNav{
+    background-color: #FFFFFF !important;
+  }
+  .navbar-brand{
+    width: 204px;
+    font-family: 'Sintony', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .navbar-dark .navbar-nav .nav-link{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    margin: 2px;
+  }
+  .nav-link{
+    color: #000000!important;
+  }
+  .navbar-toggler-icon{
+    background-color: #F2B71D;
+  }
+  button .navbar-toggler{
+    float: right;
+  }
+  button{
+    border: none;
+  }
+  .navbar-brand:hover{
+    color: #000000;
+  }
+.span{
+  font-family: 'Sintony', sans-serif;
+  color: #F2B71D;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+  border-bottom: 3px solid #F2B71D;
+}
+.register{
+  background-color: #F2B71D;
+  color: white;
+}
+.register:hover{
+  background-color: #f2b61dc7;
+}

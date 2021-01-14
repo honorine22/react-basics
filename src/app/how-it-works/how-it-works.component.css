@@ -1,0 +1,38 @@
+.how-title h5{
+  font-weight: bold;
+}
+.how-title .star{
+  font-size: 36px;
+  font-weight: lighter;
+}
+.how-title hr{
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #000;
+  margin: 1em 0; 
+  padding: 0; 
+}
+.how-title-underline{
+  margin: 0 25%;
+}
+.card{
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  min-height: 400px;
+}
+.card hr{
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #F2B71D;
+  margin: 1em 0; 
+  padding: 0; 
+}
+.card .linecolor{
+  color: #F2B71D;
+  font-weight: bold;
+}
+.card-title{
+  font-weight: bold;
+}

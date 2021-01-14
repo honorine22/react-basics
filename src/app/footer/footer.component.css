@@ -1,0 +1,49 @@
+footer{
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+}
+.widget-title{
+    color: #F2B71D;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.contact-btn{
+    background-color: #F2B71D;
+    float: right;
+    font-weight: bold;
+}
+.contact-btn:hover{
+    background-color: #f2b61dc7;
+}
+a, .form-control::placeholder{
+    color: #FFF;
+}
+.social-info{
+    background-color: #f2b61daf;
+    padding: 0.8%;
+}
+.social-info:hover{
+    background-color: #F2B71D;
+}
+footer hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #999999;
+    margin: 1em 0; 
+    padding: 0; 
+}
+footer ul{
+    list-style-type: square;
+}
+footer ul li:hover{ list-style: none; }
+footer ul li a:hover{ color: #f2b61daf;}
+/* styling the form */
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999999;
+    color: #FFF;
+    outline: none;
+}

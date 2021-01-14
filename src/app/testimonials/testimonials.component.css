@@ -1,0 +1,11 @@
+.title{
+    font-weight: bold;
+}
+.blockquote{
+    font-size: 15px;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
